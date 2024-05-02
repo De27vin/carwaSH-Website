@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto-Reinigungsservice - Schritt 1</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarwaSH - Schritt 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="progress-bar-container">
-            <div class="progress-text">0%</div>
-            <div class="progress progress-moved">
-                <div class="progress-bar"></div>
-            </div>
+      <!-- Progress Bar -->
+      <div class="progress-bar-container">
+        <div class="progress-text">0%</div>
+        <div class="progress progress-moved">
+          <div class="progress-bar"></div>
         </div>
-            
-        <div class="options">
-            
-            <div class="option" onclick="selectOption('Innenreinigung')">
-                <h2>Innenreinigung</h2>
-                <img src="../assets/interior-pic.jpg" alt="Innenreinigung">
-                <button class="button" type="button">Wählen</button>
-            </div>
-            
-            <div class="option" onclick="selectOption('Außenreinigung')">
-                <h2>Außenreinigung</h2>
-                <img src="../assets/exterior-pic.jpg" alt="Außenreinigung">
-                <button class="button" type="button">Wählen</button>
-            </div>
+      </div>
 
-            <div class="option" onclick="selectOption('Innen -und Außenreinigung')">
-                <h2>Innen -und Außenreinigung</h2>
-                <img src="../assets/interior-exterior-pic.png" alt="Innen -und Außenreinigung">
-                <button class="button" type="button">Wählen</button>
-                
-            </div>
-
+      <div class="main-content">
+        <!-- Vorhandene Optionen für die Reinigung -->
+        <div class="options" id="cleaningOptions">
+          <div class="option" onclick="selectOption('Innenreinigung')">
+            <h2>Innenreinigung</h2>
+            <img src="../assets/interior-pic.jpg" alt="Innenreinigung" />
+            <button class="button" type="button">Wählen</button>
+          </div>
+          <div class="option" onclick="selectOption('Außenreinigung')">
+            <h2>Außenreinigung</h2>
+            <img src="../assets/exterior-pic.jpg" alt="Außenreinigung" />
+            <button class="button" type="button">Wählen</button>
+          </div>
+          <div class="option"
+            onclick="selectOption('Innen und Außenreinigung')">
+            <h2>Innen und Außenreinigung</h2>
+            <img
+              src="../assets/interior-exterior-pic.png"
+              alt="Innen und Außenreinigung"
+            />
+            <button class="button" type="button">Wählen</button>
+          </div>
         </div>
+
+        <!-- Neue Optionen für Autogrößen, anfangs versteckt -->
+        <div class="options" id="sizeOptions" style="display: none">
+          <div class="option" onclick="selectSize('Kleinwagen')">
+            <h2>Kleinwagen</h2>
+            <img src="../assets/car-compact-car.jpg">
+            <button class="button" type="button">Wählen</button>
+          </div>
+          <div class="option" onclick="selectSize('Kombi')">
+            <h2>Kombi</h2>
+            <img src="../assets/car-kombi.jpg">
+            <button class="button" type="button">Wählen</button>
+          </div>
+          <div class="option" onclick="selectSize('Bus')">
+            <h2>SUV</h2>
+            <img src="../assets/car-suv.jpg">
+            <button class="button" type="button">Wählen</button>
+          </div>
+          <div class="option" onclick="selectSize('Bus')">
+            <h2>Minivan & 7 Sitzer</h2>
+            <img src="../assets/car-minivan-7seater.jpg">
+            <button class="button" type="button">Wählen</button>
+          </div>
+        </div>
+
+        <!-- Zusatzoptionen, anfangs versteckt -->
+<div class="options" id="extrasOptions" style="display: none">
+    <div class="option" onclick="selectOption('Sitzreinigung')">
+        <h2>Sitzreinigung</h2>
+        <button class="button" type="button">+30 CHF</button>
+    </div>
+    <div class="option" onclick="selectOption('Lederpflege')">
+        <h2>Lederpflege</h2>
+        <button class="button" type="button">+30 CHF</button>
+    </div>
+    <div class="extra-wishes">
+        <label for="extraWishes">Extrawünsche:</label>
+        <textarea id="extraWishes" name="extraWishes" rows="4" cols="50"></textarea>
+    </div>
+</div>
+
+
+        <!-- Zurück-Knopf -->
+        <div class="navigation">
+          <button
+            id="backButton"
+            class="button"
+            type="button"
+            onclick="goBack()"
+          >
+            Zurück
+          </button>
+
+          <!-- Weiter Knopf -->
+          <button
+            id="continueButton"
+            class="button disabled"
+            type="button"
+            onclick="showNext()"
+            disabled
+          >
+            Weiter
+          </button>
+        </div>
+      </div>
+
+      <!-- Aktueller Preis -->
+      <div class="price-display">
+        <h2>Aktueller Preis: <span id="currentPrice">0</span> €</h2>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
