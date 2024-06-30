@@ -1,0 +1,49 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;   
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold; /* Make the font bold */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    height: 3.5rem;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar .nav-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .nav-items a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.navbar .nav-items a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .navbar .nav-items a {
+        margin-left: 10px;
+        font-size: 16px; 
+    }
+}
