@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Über uns - carwaSH</title>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/src/assets/Carwash_Logo_only_foamer.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
@@ -47,8 +48,14 @@
           Kontaktieren Sie uns für ein individuelles Angebot oder um einen
           Termin zu vereinbaren.
         </p>
-        <p><strong>Whatsapp/SMS:</strong> 079 106 01 00</p>
-        <p><strong>E-Mail:</strong> kontakt@carwa-sh.ch</p>
+        <p>
+        <a><strong>Whatsapp/SMS:</strong> 079 106 01 00</a>
+        <button class="copy-button" onclick="copyToClipboard('tel', '0791060100')">Kopieren</button>
+        </p>
+        <p>
+        <a><strong>E-Mail:</strong> kontakt@carwa-sh.ch</a>
+        <button class="copy-button" onclick="copyToClipboard('email', 'kontakt@carwa-sh.ch')">Kopieren</button>
+        </p>
       </section>
     </main>
     <footer>
@@ -57,5 +64,6 @@
         unser eigenes.
       </p>
     </footer>
+    <script src="/src/js/script.js"></script>
   </body>
 </html>
