@@ -1,0 +1,144 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;   
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px 20px;
+  height: 3.5rem;
+}
+
+.explanation {
+  margin-top: 1rem;
+  max-width: 50rem;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.logo img {
+  height: 75px;
+}
+
+.navbar .nav-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .nav-items a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.navbar .nav-items a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: rgb(255, 215, 48);
+  color: #000000;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 15px;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #e4e4e4;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #000000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery .image-pair {
+  display: flex;
+  flex-direction: row;
+}
+
+.copy-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.copy-button:hover {
+  background-color: rgb(255, 215, 48);
+}
+
+.copy-button:active {
+  background-color: rgb(255, 215, 48);
+}
+
+@media (max-width: 600px) {
+  .navbar .nav-items a {
+    margin-left: 10px;
+    font-size: 16px; 
+  }
+  main {
+    padding: 10px;
+  }
+}
