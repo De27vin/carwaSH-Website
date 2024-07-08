@@ -1,22 +1,11 @@
 body {
   font-family: 'Quicksand', sans-serif;
-<<<<<<< HEAD
-  font-weight: bold;   
-}
-
-body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold; 
-  margin: 0;
-  padding: 0;
-=======
   font-weight: bold;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
->>>>>>> hotfix
 }
 
 .navbar {
@@ -40,10 +29,6 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> hotfix
 .logo img {
   height: 75px;
 }
@@ -82,10 +67,7 @@ main {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-<<<<<<< HEAD
-=======
   flex: 1; 
->>>>>>> hotfix
 }
 
 h1 {
@@ -109,11 +91,6 @@ footer {
   padding: 10px 0;
   background: #000000;
   color: #fff;
-<<<<<<< HEAD
-  position: fixed;
-  bottom: 0;
-=======
->>>>>>> hotfix
   width: 100%;
 }
 
@@ -152,8 +129,6 @@ footer {
   background-color: rgb(255, 215, 48);
 }
 
-<<<<<<< HEAD
-=======
 .carousel {
   position: relative;
   max-width: 600px;
@@ -188,9 +163,9 @@ footer {
   border: none;
   padding: 10px;
   cursor: pointer;
-  border-radius: 50%; /* Make the button round */
-  width: 40px; /* Set width to create a circle */
-  height: 40px; /* Set height to create a circle */
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,7 +178,6 @@ footer {
   right: 10px;
 }
 
->>>>>>> hotfix
 @media (max-width: 600px) {
   .navbar .nav-items a {
     margin-left: 10px;
@@ -212,11 +186,7 @@ footer {
   main {
     padding: 10px;
   }
-<<<<<<< HEAD
-}
-=======
   .carousel {
     max-width: 325px;
   }
 }
->>>>>>> hotfix
