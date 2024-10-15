@@ -1,6 +1,7 @@
 RewriteEngine On
 
-RewriteRule ^src/html/(.*)$ /$1 [L,NC,R=301]
+RewriteRule ^bildergalerie$ /src/html/bildergalerie.html [L,NC]
+RewriteRule ^ueber-uns$ /src/html/ueber-uns.html [L,NC]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
